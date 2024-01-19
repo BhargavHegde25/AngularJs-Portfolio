@@ -1,0 +1,113 @@
+.about{
+    padding: 80px 0;
+   
+}
+
+.about {
+    font-family: 'poppins', sans-serif;
+}
+
+.about .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+    text-align: center; 
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+ font-family: 'ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #ff004f;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "";
+}
+.about .about-content{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+   height: 400px;
+   min-height: 500px;
+   object-fit: cover;
+   border-radius: 7px;  
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.about .about-content .right .text span{
+color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background:brown ; 
+    color:black; 
+    margin-top: 15px;
+    font-size:15px ;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+/*education section*/
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px; 
+ }
+ .tab-links{
+     margin-right: 50px;
+     font-size: 30px;
+     font-weight: 600;
+     cursor: pointer;
+     position: relative;
+ }
+ .tab-links::after{
+     content: '';
+     width: 0;
+     height: 3px;
+     background: #ff004f;
+     position: absolute ;
+     left: 0;
+     bottom: -8px;
+     transition: all 0.3s ease;
+ }
+ .tab-links.active-link::after{
+ width: 100%;
+ }
+ .tab-contents ul li{
+     list-style: none;
+     margin: 10px 0;
+ }
+ .tab-contents ul li span{
+     color:#ff004f;
+     font-size: 15px;
+ }
+ 

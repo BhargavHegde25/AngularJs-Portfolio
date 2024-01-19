@@ -1,0 +1,95 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'ubantu' sans-serif;
+    transition:all 0.3s ease;
+ 
+}
+.navbar/*.sticky*/{
+    padding: auto;
+    background:greenyellow;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar .logo a{
+    color:darkred;
+    font-size: 35px;
+    font-weight: 600;
+   /* margin-left: -50px; */
+}
+
+.navbar .logo a span{
+    color:black;
+    transition:all 0.3s ease ;
+    
+}
+.navbar.sticky .logo a span{
+    color:black;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.navbar .menu li a{
+    display: block;
+    color:black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+  transition: color 0.3s ease;
+  
+}
+.navbar .menu li a i{
+    margin-right: 15px;
+}
+.navbar .menu li a:hover{
+    color: chocolate;
+}
+.navbar.sticky .menu li a:hover{
+    color:black;
+}
+.menu-btn{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;  
+}
+
+
+
+
